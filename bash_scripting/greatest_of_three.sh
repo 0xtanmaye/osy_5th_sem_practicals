@@ -3,7 +3,10 @@ read -p "Enter first number: " n1
 read -p "Enter second number: " n2
 read -p "Enter third number: " n3
 
-if [[ $n1 -gt $n2 && $n1 -gt $n3 ]]
+if [[ $n1 -eq $n2 && $n1 -eq $n3 ]]
+then
+	echo "All three numbers are equal"
+elif [[ $n1 -gt $n2 && $n1 -gt $n3 ]]
 then
 	echo "$n1 is the greatest"
 elif [[ $n2 -gt $n3 && $n2 -gt $n1 ]]
