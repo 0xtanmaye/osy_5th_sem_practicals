@@ -1,6 +1,6 @@
 #!/bin/bash
+# Find out file permissions
 read -p "Enter name: " input_name
-
 if [ ! -e $input_name ]; then
 	echo "$input_name doesn't exist"
 	exit 1
