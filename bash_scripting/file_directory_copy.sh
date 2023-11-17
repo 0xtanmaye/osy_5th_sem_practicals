@@ -10,4 +10,7 @@ elif [ -d $sourcef ]
 then
 	cp -rv $sourcef $destinationf
 	echo "$sourcef copied as $destinationf successfully"
+elif ! [ -e $sourcef ]
+then
+	echo "$sourcef doesn't exist"
 fi
